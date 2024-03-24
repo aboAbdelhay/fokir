@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .clear {
   clear: both;
 }
@@ -92,6 +95,7 @@ ul li {
   width: 100%;
   padding: 15px;
   color: white;
+  z-index: 10;
 }
 .navbar .navbar-logo {
   float: left;
@@ -107,7 +111,7 @@ ul li {
 .navbar .navbar-link li {
   float: left;
   padding: 5px 15px 0;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 .navbar .navbar-link li:hover a {
   color: rgb(255, 48, 91);
@@ -142,7 +146,29 @@ ul li {
   color: rgb(255, 255, 255);
   font-size: 26px;
   font-weight: 300;
+  margin: auto;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: move-right 1s linear 0.5s infinite alternate;
+  /* animation-play-state: paused;  */
+  /* animation-name: move-right; */
+  /* animation-duration: 1s; */
+  /* animation-timing-function: linear; */
+  /* animation-delay: 3s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+  border-right: 2px solid white;
 }
+@keyframes move-right {
+  from {
+    width: 300px;
+  }
+  to {
+    width: 180px;
+  }
+}
+
 /* end home */
 /* start about */
 .about {
@@ -511,6 +537,7 @@ input[type="email"] {
   padding: 5px 0 0 10px;
   font-size: 14px;
   line-height: 20px;
+  resize: none;
 }
 .contact .box button {
   color: white;
