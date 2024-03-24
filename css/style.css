@@ -197,6 +197,7 @@ ul li {
 .about .about-info {
   float: left;
   width: 50%;
+  padding-left: 50px;
 }
 .about .about-info .i {
   display: inline-block;
