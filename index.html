@@ -419,8 +419,9 @@
       var typed = new Typed(
    "#element",
    {
-     strings: [" Designer ", " Developer "],
-     typeSpeed: 90,
+     strings: [" Designer^1000 ", " Developer^1000 "],
+     typeSpeed: 50,
+     backSpeed: 50, // Speed at which characters are erased (lower value for slower erasing)
      loop: true // Add this option to loop the animation infinitely
    }
  );
