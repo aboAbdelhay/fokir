@@ -21,7 +21,6 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
-  height: 5000px;
 }
 h1,
 h2,
@@ -87,6 +86,9 @@ ul li {
   background-color: rgb(255, 48, 91);
   margin: 0 auto;
 }
+.active{
+  color: rgb(255, 48, 91);
+}
 /* end component */
 /* start navbar */
 .navbar {
@@ -142,15 +144,16 @@ ul li {
   font-size: 70px;
   font-weight: 700;
 }
-.home .home-info h4 {
-  color: rgb(255, 255, 255);
+.home .home-info h4,
+span {
+  color: rgb(255, 255, 255) !important;
   font-size: 26px;
   font-weight: 300;
-  margin: auto;
-  width: 300px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: move-right 1s linear 0.5s infinite alternate;
+  /* margin: auto; */
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+  /* width: 300px; */
+  /* animation: move-right 1s linear 0.5s infinite alternate; */
   /* animation-play-state: paused;  */
   /* animation-name: move-right; */
   /* animation-duration: 1s; */
@@ -158,16 +161,16 @@ ul li {
   /* animation-delay: 3s; */
   /* animation-iteration-count: infinite; */
   /* animation-direction: alternate; */
-  border-right: 2px solid white;
+  /* border-right: 2px solid white; */
 }
-@keyframes move-right {
+/* @keyframes move-right {
   from {
     width: 300px;
   }
   to {
     width: 180px;
   }
-}
+} */
 
 /* end home */
 /* start about */
